@@ -41,8 +41,6 @@ app.get('/dividir:dividendo/:divisor', (req, res) => {
         res.json({
             resultado
         })
-
-        // res.send(`dividendo=${dividendo} y divisor=${divisor}`)
     }
 
 })
