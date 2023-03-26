@@ -20,8 +20,8 @@ app.get('/saludo:nombre/:apellido', (request, response) => {
 //Item 2-------------------------------------------------------------------------------------------
 /**Crear una ruta “dividir” la cual reciba dos parámetros (ruta parametrizada) divisor y dividendo, la misma tiene que devolver un res.json({error: "no se puede dividir por cero"}) si el usuario ingresa un 0, si no es el caso devolver res.json({resultado}). */
 
-//para divisor  =0 http://localhost:3000/dividir20/0
-//para divisor !=0 http://localhost:3000/dividir20/2 
+//para divisor  =0 http://localhost:3000/dividir/20/0
+//para divisor !=0 http://localhost:3000/dividir/20/2 
 app.get('/dividir:dividendo/:divisor', (req, res) => {
 
     let dividendo = parseInt(req.params.dividendo)
